@@ -1,0 +1,40 @@
+{
+    "ProductCollection": [
+      {
+        "ProductId": "HT-1000",
+        "Category": "Laptops",
+        "Price": 956
+      },
+      {
+        "ProductId": "HT-1001",
+        "Category": "Laptops",
+        "Price": 1249
+      },
+      {
+        "ProductId": "HT-1002",
+        "Category": "Accessories",
+        "Price": 299
+      },
+      {
+        "ProductId": "HT-1003",
+        "Category": "Flat Screen Monitors",
+        "Price": 230
+      },
+      {
+        "ProductId": "HT-1004",
+        "Category": "Printers",
+        "Price": 830
+      },
+      {
+        "ProductId": "HT-1005",
+        "Category": "Laptops",
+        "Price": 1300
+      },
+      {
+        "ProductId": "HT-1006",
+        "Category": "Printers",
+        "Price": 490
+      }
+    ]
+  }
+  

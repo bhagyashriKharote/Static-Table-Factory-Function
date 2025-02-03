@@ -1,0 +1,97 @@
+{
+    "_version": "1.60.0",
+    "sap.app": {
+        "id": "statictable",
+        "type": "application",
+        "i18n": "i18n/i18n.properties",
+        "applicationVersion": {
+            "version": "0.0.1"
+        },
+        "title": "{{appTitle}}",
+        "description": "{{appDescription}}",
+        "resources": "resources.json",
+        "sourceTemplate": {
+            "id": "@sap/generator-fiori:basic",
+            "version": "1.16.2",
+            "toolsId": "dc07de89-3583-4da0-96ef-3a3b376fea02"
+        }
+    },
+    "sap.ui": {
+        "technology": "UI5",
+        "icons": {
+            "icon": "",
+            "favIcon": "",
+            "phone": "",
+            "phone@2": "",
+            "tablet": "",
+            "tablet@2": ""
+        },
+        "deviceTypes": {
+            "desktop": true,
+            "tablet": true,
+            "phone": true
+        }
+    },
+    "sap.ui5": {
+        "flexEnabled": false,
+        "dependencies": {
+            "minUI5Version": "1.120.25",
+            "libs": {
+                "sap.m": {},
+                "sap.ui.core": {}
+            }
+        },
+        "contentDensities": {
+            "compact": true,
+            "cozy": true
+        },
+        "models": {
+            "i18n": {
+                "type": "sap.ui.model.resource.ResourceModel",
+                "settings": {
+                    "bundleName": "statictable.i18n.i18n"
+                }
+            }
+        },
+        "resources": {
+            "css": [
+                {
+                    "uri": "css/style.css"
+                }
+            ]
+        },
+        "routing": {
+            "config": {
+                "routerClass": "sap.m.routing.Router",
+                "controlAggregation": "pages",
+                "controlId": "app",
+                "transition": "slide",
+                "type": "View",
+                "viewType": "XML",
+                "path": "statictable.view",
+                "async": true,
+                "viewPath": "statictable.view"
+            },
+            "routes": [
+                {
+                    "name": "Routestatictable",
+                    "pattern": ":?query:",
+                    "target": [
+                        "Targetstatictable"
+                    ]
+                }
+            ],
+            "targets": {
+                "Targetstatictable": {
+                    "id": "statictable",
+                    "name": "statictable"
+                }
+            }
+        },
+        "rootView": {
+            "viewName": "statictable.view.App",
+            "type": "XML",
+            "id": "App"
+        }
+    }
+}
