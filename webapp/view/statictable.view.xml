@@ -1,15 +1,11 @@
-<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="statictable.controller.statictable">
-    <Table id="IDGenTable" items="{ path: '/ProductCollection', factory: '.createRow' }">
-        <columns>
-            <Column>
-                <Text text="Product ID" />
-            </Column>
-            <Column>
-                <Text text="Category" />
-            </Column>
-            <Column>
-                <Text text="Price Status" />
-            </Column>
-        </columns>
-    </Table>
+<mvc:View
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    controllerName="statictable.controller.statictable"
+>
+    <Table
+        id="IDGenTable"
+        columns="{ path: 'columns>/TableColumns', factory: '.createColumn' }"
+        items="{ path: '/ProductCollection', templateShareable: true, factory: '.createRow' }"
+    />
 </mvc:View>
